@@ -18,7 +18,7 @@ public class MyRMIServer{
         	String name = "tib2-test";
             MyCalc engine = new MyCalcImpl();
             MyCalc stub = (MyCalc) UnicastRemoteObject.exportObject(engine, 0);
-            Registry registry = LocateRegistry.getRegistry(name, serverPort);
+            Registry registry = LocateRegistry.getRegistry(name, 1099);
             System.out.println("Registering Calculator Object");
             registry.rebind(name, stub);
        
