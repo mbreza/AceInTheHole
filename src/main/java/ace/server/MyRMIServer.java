@@ -15,7 +15,7 @@ public class MyRMIServer{
             System.setSecurityManager(new SecurityManager());
         }
         try {
-        	String name = "Calculator";
+        	String name = "tib2-test";
             MyCalc engine = new MyCalcImpl();
             MyCalc stub = (MyCalc) UnicastRemoteObject.exportObject(engine, 0);
             Registry registry = LocateRegistry.getRegistry(1099);
