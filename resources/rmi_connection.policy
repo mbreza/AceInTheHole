@@ -1,8 +1,8 @@
 grant {
     permission java.security.AllPermission;
-    permission java.net.SocketPermission "localhost:1099", "connect, resolve";
+    permission java.net.SocketPermission "tib2-test:1099", "connect, resolve";
     permission java.net.SocketPermission "127.0.0.1:1099", "connect, resolve";
-    permission java.net.SocketPermission "localhost:80", "connect, resolve";
+    permission java.net.SocketPermission "tib2-test:80", "connect, resolve";
     permission java.net.SocketPermission "83.0.171.108:1099", "connect, resolve";
     permission java.net.SocketPermission "89.71.155.77:1099", "connect, resolve";
     permission java.net.SocketPermission "83.0.171.108:80", "connect, resolve";
