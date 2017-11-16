@@ -8,8 +8,8 @@ public class MyRMIServer{
 
 	public static void main(String[] args) throws Exception {
 
-    	System.setProperty("java.rmi.server.hostname", "89.71.44.3");
-    	System.setProperty("java.security.policy","file:/home/mbreza/eclipse-workspace/server/resources/rmi_connection.policy");
+    	//System.setProperty("java.rmi.server.hostname", "89.71.44.3");
+    	System.setProperty("java.security.policy","file:/home/xyz/AceInTheHole/AceInTheHole/server/resources/rmi_connection.policy");
     	
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
