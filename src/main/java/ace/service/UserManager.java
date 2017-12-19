@@ -67,7 +67,7 @@ public class UserManager implements UserDAO {
 	      Integer id_user = null;
 	      
 	      try {
-	    	 UserRole rola = userRoleManager.getUserRoleByID(1);
+	    	 UserRole rola = userRoleManager.getUserRoleByID(ID);
 	    	 trans = session.beginTransaction();
 	         User user = new User(login, password, email, rola);
 	         id_user = (Integer) session.save(user); 
